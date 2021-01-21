@@ -1,0 +1,18 @@
+.home-content {
+    display: flex;
+    flex-flow: column;
+    margin: 1rem;
+
+    .home-slideshow {
+      margin-bottom: 1rem;
+    }
+
+    .home-body {
+        display: flex;
+        width: 100%;
+
+        .home-cards {
+          @include product-card;
+        }
+    }
+}

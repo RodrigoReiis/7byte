@@ -1,0 +1,64 @@
+.sidebar-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sidebar {
+    display: flex;
+    position: fixed;
+    width: 330px;
+    height: 100vh;
+    background-color: black;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    flex-flow: column;
+
+    .sidebar-close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        background-color: $semiDarkBlue;
+
+        fa-icon {
+            padding: 1rem;
+        }
+
+        p {
+            font-size: 18px;
+            margin-left: 1rem;
+        }
+    }
+
+    .sidebar-nav {
+        display: flex;
+
+        ul {
+            width: 100%;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 2rem 1rem 0;
+                list-style-type: none;
+                color: white;
+
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    cursor: pointer;
+                    font-family: 'BarlowSemibold';
+                }
+            }
+        }
+    }
+}

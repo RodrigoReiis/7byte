@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "name": "Cabo USB Shinka",
+      "description": "Cabo de Dados Compatível p/ Iphone Shinka i7",
+      "price": "19,00",
+      "weight": "0.5",
+      "amount": "100",
+      "imageUrl": "https://http2.mlstatic.com/cabo-dados-usb-v8-21-a-metal-artist-series-sjx-11-shinka-D_NQ_NP_787115-MLB41385089786_042020-F.webp",
+      "id": 1
+    },
+    {
+      "name": "Adaptador Usb Wireless",
+      "description": "Tp-link Wn-722n 150mbps Versão 3.0",
+      "price": "49,00",
+      "weight": "0.8",
+      "amount": "100",
+      "imageUrl": "https://http2.mlstatic.com/adaptador-usb-wireless-tp-link-wn-722n-150mbps-verso-30-D_NQ_NP_966505-MLB41180318400_032020-F.webp",
+      "id": 2
+    },
+    {
+      "name": "Conversor Hdmi/Vga",
+      "description": "Este é um adaptador novo chip que pode converte",
+      "price": "59,00",
+      "weight": "0.3",
+      "amount": "100",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51EQ-lDTpOL._AC_SX466_.jpg",
+      "id": 3
+    },
+    {
+      "name": "Conversor Hdmi/Vga",
+      "description": "Este é um adaptador novo chip que pode converte",
+      "price": "59,00",
+      "weight": "0.3",
+      "amount": "100",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51EQ-lDTpOL._AC_SX466_.jpg",
+      "id": 3
+    }
+  ],
+  "promotion": [
+    {
+      "name": "Cabo USB Shinka",
+      "description": "Cabo de Dados Compatível p/ Iphone Shinka i7",
+      "price": "19,00",
+      "weight": "0.5",
+      "amount": "100",
+      "imageUrl": "https://http2.mlstatic.com/cabo-dados-usb-v8-21-a-metal-artist-series-sjx-11-shinka-D_NQ_NP_787115-MLB41385089786_042020-F.webp",
+      "id": 1
+    },
+    {
+      "name": "Adaptador Usb Wireless",
+      "description": "Tp-link Wn-722n 150mbps Versão 3.0",
+      "price": "49,00",
+      "weight": "0.8",
+      "amount": "100",
+      "imageUrl": "https://http2.mlstatic.com/adaptador-usb-wireless-tp-link-wn-722n-150mbps-verso-30-D_NQ_NP_966505-MLB41180318400_032020-F.webp",
+      "id": 2
+    },
+    {
+      "name": "Conversor Hdmi/Vga",
+      "description": "Este é um adaptador novo chip que pode converte",
+      "price": "59,00",
+      "weight": "0.3",
+      "amount": "100",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51EQ-lDTpOL._AC_SX466_.jpg",
+      "id": 3
+    }
+  ],
+  "routes": [
+    {
+      "id": 0,
+      "name": "Home",
+      "url": "/home"
+    },
+    {
+      "id": 1,
+      "name": "Todas as categorias",
+      "url": "/allCategories"
+    },
+    {
+      "name": "Dashborad",
+      "url": "/admin",
+      "id": 2
+    },
+    {
+      "name": "Alter Products",
+      "url": "/admin/products",
+      "id": 3
+    }
+  ],
+  "about": [
+    {
+      "id": 0,
+      "name": "Seven Byte Soluções Tecnologia Ltda ME",
+      "end": "Av Elias Maluf 1835 Box 11, Wanel Ville, Sorocaba, SP",
+      "phone": "(15) 98165-7563",
+      "email": "higor@7byte.com.br"
+    }
+  ]
+}

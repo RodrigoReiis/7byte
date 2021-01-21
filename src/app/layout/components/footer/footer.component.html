@@ -1,0 +1,23 @@
+<div class="footer">
+  <div class="footer-nav">
+    <ul>
+      <li *ngFor="let link of stateLinks">
+        <a [routerLink]="[link.url]">{{ link.name }}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-about">
+    <div class="c1">
+      <!-- TODO Adicionar dispatch para o endpoint de sobre nos para preencher automaticamente esses dados -->
+      <h5>Sobre</h5>
+      <p>Seven Byte Soluções Tecnologia Ltda ME</p>
+      <p>Av Elias Maluf 1835 Box 11, Wanel Ville, Sorocaba, SP</p>
+      <p>(15) 98165-7563 - Whatsapp</p>
+      <p>higor@7byte.com.br</p>
+    </div>
+  </div>
+      <!-- TODO Adicionar dispatch para preenchimento automatico dos parceiros das empresas -->
+  <div class="footer-partners">
+    <h5>Parceiros</h5>
+  </div>
+</div>

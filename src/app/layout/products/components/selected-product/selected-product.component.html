@@ -1,0 +1,31 @@
+<div class="product-container">
+  <div class="product-header">
+    <h2>{{ selectedProduct.name }}</h2>
+  </div>
+  <div class="product-body">
+    <div class="product-images">
+      <div class="product-images-list">
+        <!-- TODO CRIAR ESTRUTURA NO BANCO DE DADOS QUE RECEBERA UM JSON COM AS IMAGENS DO PRODUTO -->
+      </div>
+      <div class="product-images-selected">
+        <img src="{{ selectedProduct.imageUrl }}" alt="{{ selectedProduct.name }}">
+      </div>
+    </div>
+    <div class="product-description">
+      <div class="product-description-header">
+        {{ selectedProduct.name }}
+      </div>
+      <div class="product-button">
+        <button (click)="whatsAppShare()">Compartilhar no Whatsapp</button>
+        <button (click)="whatsAppSend()">Comprar pelo Whatsapp</button>
+        <button disabled>Adicionar ao carrinho</button>
+      </div>
+      <div class="product-description-description">
+        {{ selectedProduct.description }}
+      </div>
+      <div class="product-description-price">
+        R$ {{ selectedProduct.price }}
+      </div>
+    </div>
+  </div>
+</div>

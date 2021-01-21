@@ -1,0 +1,51 @@
+.footer {
+  @include md {
+    flex-flow: row;
+    height: max-content;
+    padding-right: 1rem;
+  }
+
+  display: flex;
+  padding-top: 1rem;
+  flex-flow: column;
+  width: 100%;
+  justify-content: space-between;
+  background-color: $semiDarkBlue;
+
+  .footer-nav {
+
+    ul {
+      li{
+        list-style-type: none;
+        margin-bottom: 0.5rem;
+
+        a {
+          text-decoration: none;
+          border-bottom: 1px solid white;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .footer-about {
+    div {
+      color: white;
+
+      h4 {
+
+      }
+
+      p {
+        font-family: 'BarlowThin';
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+
+  .footer-partners {
+      color: white;
+    div {
+    }
+  }
+}

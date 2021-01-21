@@ -1,0 +1,15 @@
+<div class="sidebar-background"></div>
+<div class="sidebar">
+    <div class="sidebar-close">
+        <p>Meu carrinho <fa-icon [icon]="faShoppingBag"></fa-icon></p>
+        <fa-icon [icon]="faTimes" (click)="closeSidebar()"></fa-icon>
+    </div>
+    <nav class="sidebar-nav">
+        <ul>
+            <li *ngFor="let route of state">
+                <a [routerLink]="[route.url]">{{ route.name }}</a>
+                <fa-icon [icon]="faChevronRight"></fa-icon>
+            </li>            
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,28 @@
+<div class="products-container">
+  <div class="products-header">
+    <!-- COLORCAR AQUI A CATEGORIA QUE SERÁ SELECIONADA -->
+    <h3>{{ selectedRoute }}</h3>
+  </div>
+  <div class="products-body">
+    <div class="products-menu">
+      <ul>
+        <h5>Categorias</h5>
+        <li *ngFor="let link of menuLinks">
+          <a [routerLink]="[link.url]">{{ link.name }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="products-list">
+      <!-- ADICIONAR FOR PARA PREENCHER OS PRODUTOS DE ACORDO COM A CATEGORIA SELECIONADA -->
+      <div class="card" *ngFor="let product of selectedProduct">
+        <img class="card-img-top" src="{{product.imageUrl}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <h5 class="card-title">R${{ product.price }}</h5>
+            <a [routerLink]="['/product', product.id]" class="btn btn-primary">Visualizar produto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

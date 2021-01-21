@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* RESPONSIVE */
+@import './assets/style/responsive/breakpoints';
+
+/* VARIABLES */
+@import './assets/style/variables/colors';
+@import './assets/style/variables/fonts';
+
+/* PLACEHOLDERS */
+@import './assets/style/placeholders/products.placeholder';
+
+/* STYLES */
+@import './assets/style/layout/header.scss';
+@import './assets/style/layout/sidebar.scss';
+@import './assets/style/layout/home.scss';
+@import './assets/style/layout/footer.scss';
+@import './assets/style/layout/products';
+@import './assets/style/layout/product';
+
+
+body {
+    top: 0;
+    left: 0;
+    margin: unset;
+    font-family: 'BarlowMedium';
+    font-size: 14px;
+}
+

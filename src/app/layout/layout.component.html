@@ -1,0 +1,4 @@
+<app-header (open)="changeStatus($event)"></app-header>
+<app-sidebar *ngIf="open" (open)="changeStatus($event)"></app-sidebar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

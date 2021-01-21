@@ -1,0 +1,18 @@
+@mixin product-card {
+  @include md {
+    display: flex;
+    column-count: 4;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 256px;
+    height: 460px;
+    margin: 0.5rem;
+
+    .card-img-top {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.products-container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+
+  .products-header {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+  }
+
+  .products-body {
+    display: flex;
+    margin: 2rem 5rem 5rem 5rem;
+    padding: 2rem;
+
+    .products-menu {
+      display: flex;
+      width: 20%;
+
+      ul {
+        h5 {
+          text-decoration: underline;
+        }
+
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+
+    .products-list {
+      @include product-card;
+      justify-content: flex-start;
+      column-count: 3 !important;
+      width: 80%;
+    }
+  }
+}

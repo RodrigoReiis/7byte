@@ -1,0 +1,107 @@
+<div class="products-registration-container">
+  <div class="products-registration-header">
+    <h3>Produtos do sistema</h3>
+  </div>
+  <div class="products-registration-body">
+    <h5>Adicionar novo produto</h5>
+    <form action="">
+      <div class="form-group">
+        <label for="sale">Está em promoção?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="radioSalesYes" id="radioSalesYes" name="radioSales">
+          <label class="form-check-label" for="radioSalesYes">Sim</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="radioSalesNo" id="radioSalesNo" name="radioSales">
+          <label class="form-check-label" for="radioSalesNo">Não</label>
+        </div>
+      </div>
+      <!--
+        ESSE CAMPO DO TEMPO DE PROMOÇÃO SÓ APARECERÁ SE O CHECKBOX RADIOSALESYES FOR HABILITADO
+        ESTUDAR POSSIBILIDADE DE COLOCAR UM DATEPICKER RANGE AQUI NO CAMPO TEMPO DA PROMOÇÃO
+      -->
+      <div class="form-group">
+        <label for="sale">Tempo da promoção</label>
+        <div class="form-group">
+          <label for="">Data e hora do inicio</label>
+          <input type="datetime-local" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Data e hora do fim</label>
+          <input type="datetime-local" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name">Nome do produto</label>
+        <input type="text" class="form-control" name="name">
+      </div>
+      <div class="form-group">
+        <label for="value">Valor do produto</label>
+        <input type="number" class="form-control" name="value">
+      </div>
+      <div class="form-group">
+        <label for="weight">Peso</label>
+        <input type="number" class="form-control" name="weight">
+      </div>
+      <div class="form-group">
+        <label for="size">Tamanho</label>
+        <input type="number" class="form-control" name="size">
+      </div>
+      <!--
+        FAZER COM QUE NO CAMPO CORES, POSSA SER ADICIONADO MAIS DE UMA COR
+        IMAGINEI ALGO COM UM SINAL DE + DANDO UM CREATEELEMENT NESSE CAMPO
+        OBS: PODE SER EM RBG TAMBÉM;
+      -->
+      <div class="form-group">
+        <label for="">Configurações do produto</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="showColor" id="showColor" name="showColor">
+          <label class="form-check-label" for="showColor">Mostrar opção de cores?</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="showSize" id="showSize" name="showSize">
+          <label class="form-check-label" for="showSize">Mostrar opção de tamanho?</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="showQuantity" id="showQuantity" name="showQuantity">
+          <label class="form-check-label" for="showQuantity">Mostrar opção de quantidade?</label>
+        </div>
+      </div>
+      <!--
+        CAMPOS ABAIXO SERÃO EXIBIDOS APENAS SE OS CHECKBOX'S RESPECTIVOS ESTIVEREM ATIVOS
+      -->
+      <div class="form-group">
+        <label for="color">Cor</label>
+        <input type="text" class="form-control" name="color">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantidade</label>
+        <input type="number" class="form-control" name="quantity">
+      </div>
+      <!--
+        PEGAR OS VALORES DO SELECT DAS CATEGORIAS QUE SERÃO REGISTRADOS NO BANCO DE DADOS
+      -->
+      <div class="form-group">
+        <label for="group">Categoria do produto</label>
+        <select class="form-control" name="group">
+          <option value="">Periféricos</option>
+          <option value="">Cadeiras</option>
+        </select>
+      </div>
+      <!--
+        ADICIONAR AO TEXTAREA DE DESCRIÇÃO UM FORMATADOR DE TEXTO - CKEDITOR POR EXEMPLO
+      -->
+      <div class="form-group">
+        <label for="description">Descrição</label>
+        <textarea type="text" class="form-control" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pictures">Fotos do produto</label>
+        <input type="file" class="form-control-file" name="pictures">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary">+ Adicionar produto</button>
+      </div>
+    </form>
+  </div>
+</div>
